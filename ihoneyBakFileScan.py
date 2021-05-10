@@ -1,6 +1,8 @@
 # coding=utf-8
 # 2021.04.20 T00ls.net
 # __author__: test502git
+
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import requests
 import logging
 from binascii import b2a_hex
@@ -8,7 +10,7 @@ from queue import Queue
 from threading import Thread
 from argparse import ArgumentParser
 from copy import deepcopy
-
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 logging.basicConfig(level=logging.WARNING, format="%(message)s")
 
 
