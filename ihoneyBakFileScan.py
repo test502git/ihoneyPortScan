@@ -1,6 +1,6 @@
 # coding=utf-8
-# 2018.04.20 T00ls.net
-# __author__: ihoneysec
+# 2021.04.20 T00ls.net
+# __author__: test502git
 import requests
 import logging
 from binascii import b2a_hex
